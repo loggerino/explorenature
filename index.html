@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExploreNature</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,12 +28,13 @@
         <video autoplay loop muted plays-inline src="public/nature.mp4" class="backvid"></video>
         <div class="info">
             <h1 class="texttest">Explore Nature Together</h1>
-            <button>Explore</button>
+            <button>Explore!</button>
         </div>
     </div>
     <main>
         <section class="slider-wrapper">
-            <h1>Natural Attractions of the World</h1>
+            <h1>Our Selected Attractions</h1>
+            <p>The best natural attractions in the world, carefully curated by us!</p>
             <button class="slide-arrow" id="slide-arrow-prev">
                 &#8249;
             </button>
@@ -47,7 +49,7 @@
                     <figcaption>Grand Canyon</figcaption>
                 </li>
                 <li class="slide" style="background-image: url('public/kancing.png');">
-                    <figcaption>Kancing</figcaption>
+                    <figcaption>Kancing Waterfalls</figcaption>
                 </li>
                 <li class="slide" style="background-image: url('public/niagrafalls.png');">
                     <figcaption>Niagara Falls</figcaption>
@@ -60,22 +62,39 @@
         <section class="articles">
             <h2>Featured Articles</h2>
             <div class="article-grid">
-                <article>
+                <div class="article-card">
+                    <img src="public/elephant.png" alt="Nature Image 2">
                     <h3>Article Title 1</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dapibus scelerisque.
                         Vestibulum rhoncus justo sit amet metus gravida cursus.
                     </p>
-                    <img src="path_to_image.jpg" alt="Nature Image 1">
-                </article>
-                <article>
+                </div>
+                <div class="article-card">
+                    <img src="public/tiger.png" alt="Nature Image 2">
                     <h3>Article Title 2</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dapibus scelerisque.
                         Vestibulum rhoncus justo sit amet metus gravida cursus.
                     </p>
-                    <img src="path_to_image.jpg" alt="Nature Image 2">
-                </article>
+                </div>
+                <div class="article-card">
+                    <img src="public/siberia.png" alt="Nature Image 2">
+
+                    <h3>Article Title 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dapibus scelerisque.
+                        Vestibulum rhoncus justo sit amet metus gravida cursus.
+                    </p>
+                </div>
+                <div class="article-card">
+                    <img src="public/tree.png" alt="Nature Image 2">
+                    <h3>Article Title 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dapibus scelerisque.
+                        Vestibulum rhoncus justo sit amet metus gravida cursus.
+                    </p>                   
+                </div>
             </div>
         </section>
     </main>
