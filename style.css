@@ -178,6 +178,7 @@ nav ul li a:focus {
     border-radius: 0.5rem;
     padding: 0;
     padding-bottom: 1rem;
+    max-width: 1200px;
 }
 
 .article-card a {
@@ -276,11 +277,16 @@ nav ul li a:focus {
     border-bottom-left-radius: 0;
     font-size: 14px;
     font-weight: 600;
-    padding: 15px 30px;
+    padding: 5px 15px;
     color: #ffffff;
     cursor: pointer;
     border: none;
     transition: 0.2s;
+}
+
+#newsletter .feedback-container {
+    display: flex;
+    margin-bottom: 20px;
 }
 
 #about {
@@ -366,4 +372,9 @@ nav ul li a:focus {
 
 .video-card {
     padding: 20px;
+}
+
+.video-card iframe {
+    max-width: 100%;
+    height: auto;
 }
