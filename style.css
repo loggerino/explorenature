@@ -45,7 +45,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #b79f1a;
+    color: #f3cf00;
     text-decoration: none;
 }
 
@@ -180,6 +180,10 @@ nav ul li a:focus {
     padding-bottom: 1rem;
 }
 
+.article-card a {
+    text-decoration: none;
+}
+
 .article-card:hover {
     transform: scale(1.05);
     transition-duration: 100ms;
@@ -193,6 +197,7 @@ nav ul li a:focus {
 }
 
 .article-card p {
+    color: rgb(2, 2, 2);
     font-size: 0.8rem;
     line-height: 1.6;
     padding: 1.2rem;
