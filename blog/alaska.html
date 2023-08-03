@@ -3,10 +3,105 @@
 
 <head>
     <title>The Magnificent Forests of Alaska</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Spartan', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.245);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(1px);
+            border-bottom: 1px solid rgb(255 255 255 / 50%);
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #article {
+            background-color: #d0d0d08a;
+            padding: 30px;
+        }
+
+        #article h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #article h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #article p {
+            margin-bottom: 20px;
+        }
+
+        #article img {
+            display: block;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            border-radius: 2%;
+        }
+
+        #disqus_thread {
+            background-color: #9797978a;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="article">
     <h1>The Magnificent Forests of Alaska</h1>
+    <img src="/public/alaska.png" alt="Alaskan Forests">
     <p>
         Nestled in the remote wilderness of Alaska, the magnificent forests of this northern wonderland are a sight to
         behold. Towering spruce and cedar trees create a lush and vibrant canopy, providing a haven for diverse wildlife
@@ -20,12 +115,14 @@
         habitats for wildlife such as bears, eagles, salmon, and countless other species.
     </p>
     <h2>Boreal Forests</h2>
+    <img src="/public/boreal.png" alt="Borealis over the Boreal">
     <p>
         Moving inland, we encounter the boreal forests, which cover a significant portion of Alaska's landmass. The
         boreal forests are characterized by evergreen trees like black spruce, white spruce, and paper birch. These
         forests play a crucial role in sequestering carbon, helping mitigate the effects of climate change.
     </p>
     <h2>Cultural Heritage</h2>
+    <img src="/public/tree.png" alt="Grand Mountains">
     <p>
         The forests of Alaska are not just places of natural wonder; they are an integral part of the state's cultural
         heritage. Indigenous communities have lived in harmony with these forests for millennia, depending on the land
@@ -48,6 +145,7 @@
         Preserving these natural treasures requires a collective commitment to balance human activities with the need to
         conserve the rich biodiversity and pristine landscapes that define Alaska's forests.
     </p>
+    </article>
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {

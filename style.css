@@ -223,12 +223,16 @@ nav ul li a:focus {
 }
 
 #newsletter {
-    padding: 40px 80px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     background-color: #041e42;
+
+    @media (max-width: 768px) {
+        justify-content: space-between;
+    }
 }
 
 #newsletter .newstext {

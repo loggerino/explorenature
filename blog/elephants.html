@@ -3,48 +3,159 @@
 
 <head>
     <title>The Majestic Elephants of Africa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Spartan', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.245);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(1px);
+            border-bottom: 1px solid rgb(255 255 255 / 50%);
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #article {
+            background-color: #d0d0d08a;
+            padding: 30px;
+        }
+
+        #article h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #article h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #article p {
+            margin-bottom: 20px;
+        }
+
+        #article img {
+            display: block;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 2%;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        #disqus_thread {
+            background-color: #9797978a;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>The Majestic Elephants of Africa</h1>
-    <p>
-        The African elephants are among the most magnificent creatures to roam the vast savannas of Africa. With their
-        imposing presence and gentle demeanor, they capture the hearts of nature enthusiasts and wildlife photographers
-        alike. These gentle giants, scientifically known as <em>Loxodonta africana</em>, are the largest land animals on
-        Earth and hold a significant ecological and cultural value in the regions they inhabit.
-    </p>
-    <h2>Social Structures</h2>
-    <p>
-        In this article, we explore the incredible lives of African elephants, starting with their social structures.
-        These majestic creatures exhibit complex social behaviors and live in matriarchal family units, led by the
-        oldest
-        and wisest female, known as the matriarch. The bonds within elephant herds are strong, and they communicate with
-        each other using various vocalizations, gestures, and even infrasound, which is below the human hearing range.
-    </p>
-    <h2>Conservation Efforts</h2>
-    <p>
-        One of the major challenges faced by African elephants is the threat of poaching and habitat loss. Ivory trade,
-        driven by the demand for elephant tusks, has led to a decline in elephant populations over the years. Moreover,
-        the ever-expanding human settlements and agricultural activities have encroached upon their natural habitats,
-        resulting in conflict situations between humans and elephants.
-    </p>
-    <p>
-        To combat these issues and protect the African elephants, numerous conservation efforts are in place.
-        Governments, NGOs, and wildlife organizations work collaboratively to establish protected areas, strengthen
-        anti-poaching measures, and raise awareness about the importance of conserving these majestic creatures.
-        Additionally, eco-tourism has played a significant role in generating revenue to support elephant conservation
-        projects and local communities.
-    </p>
-    <p>
-        Understanding and preserving the African elephants is crucial for maintaining ecological balance and preserving
-        the rich biodiversity of Africa's savannas. By safeguarding their habitats and addressing the threats they face,
-        we can ensure that future generations will continue to witness the awe-inspiring presence of these gentle giants
-        on the African landscape.
-    </p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="article">
+        <h1>The Majestic Elephants of Africa</h1>
+        <img src="/public/elephantsavana.png" alt="Elephants in Savannas">
+        <p>
+            The African elephants are among the most magnificent creatures to roam the vast savannas of Africa. With
+            their
+            imposing presence and gentle demeanor, they capture the hearts of nature enthusiasts and wildlife
+            photographers
+            alike. These gentle giants, scientifically known as <em>Loxodonta africana</em>, are the largest land
+            animals on
+            Earth and hold a significant ecological and cultural value in the regions they inhabit.
+        </p>
+        <h2>Social Structures</h2>
+        <img src="/public/elephantherd.png" alt="Elephant Herd">
+        <p>
+            In this article, we explore the incredible lives of African elephants, starting with their social
+            structures.
+            These majestic creatures exhibit complex social behaviors and live in matriarchal family units, led by the
+            oldest
+            and wisest female, known as the matriarch. The bonds within elephant herds are strong, and they communicate
+            with
+            each other using various vocalizations, gestures, and even infrasound, which is below the human hearing
+            range.
+        </p>
+        <h2>Conservation Efforts</h2>
+        <img src="/public/elephantconserve.png" alt="Conservation Efforts">
+        <p>
+            One of the major challenges faced by African elephants is the threat of poaching and habitat loss. Ivory
+            trade,
+            driven by the demand for elephant tusks, has led to a decline in elephant populations over the years.
+            Moreover,
+            the ever-expanding human settlements and agricultural activities have encroached upon their natural
+            habitats,
+            resulting in conflict situations between humans and elephants.
+        </p>
+        <img src="/public/savanah.png" alt="African Savannas">
+        <p>
+            To combat these issues and protect the African elephants, numerous conservation efforts are in place.
+            Governments, NGOs, and wildlife organizations work collaboratively to establish protected areas, strengthen
+            anti-poaching measures, and raise awareness about the importance of conserving these majestic creatures.
+            Additionally, eco-tourism has played a significant role in generating revenue to support elephant
+            conservation
+            projects and local communities.
+        </p>
+        <p>
+            Understanding and preserving the African elephants is crucial for maintaining ecological balance and
+            preserving
+            the rich biodiversity of Africa's savannas. By safeguarding their habitats and addressing the threats they
+            face,
+            we can ensure that future generations will continue to witness the awe-inspiring presence of these gentle
+            giants
+            on the African landscape.
+        </p>
+    </article>
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {
-            this.page.url = 'https://main--exploremothernature.netlify.app/blog/';  
+            this.page.url = 'https://main--exploremothernature.netlify.app/blog/';
             this.page.identifier = '/blog/';
         };
 

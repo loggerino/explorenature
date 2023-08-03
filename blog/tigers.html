@@ -3,43 +3,150 @@
 
 <head>
     <title>The Elusive Tigers of India</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Spartan', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.245);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(1px);
+            border-bottom: 1px solid rgb(255 255 255 / 50%);
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #article {
+            background-color: #d0d0d08a;
+            padding: 30px;
+        }
+
+        #article h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #article h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #article p {
+            margin-bottom: 20px;
+        }
+
+        #article img {
+            display: block;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            border-radius: 2%;
+        }
+
+        #disqus_thread {
+            background-color: #9797978a;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>The Elusive Tigers of India</h1>
-    <p>
-        India's national animal, the Bengal tiger (<em>Panthera tigris tigris</em>), roams the dense forests and
-        grasslands of the Indian subcontinent. These majestic predators are not only a symbol of strength and grace but
-        also play a vital role in maintaining the ecological balance of their habitats.
-    </p>
-    <h2>Challenges and Conservation</h2>
-    <p>
-        In this article, we delve into the challenges faced by the elusive tigers in the wild. India's tiger population
-        has faced significant threats due to poaching, habitat fragmentation, and human-wildlife conflict. The demand
-        for
-        tiger parts in illegal markets, driven by traditional medicine and status symbols, has been a major factor
-        behind
-        tiger poaching. Additionally, as human populations expand and encroach upon tiger habitats, conflicts arise when
-        tigers venture close to villages, leading to retaliatory killings and further endangering the species.
-    </p>
-    <p>
-        Despite these challenges, concerted efforts have been made to protect and conserve tigers in India. Initiatives
-        like Project Tiger, launched in 1973, have been instrumental in establishing tiger reserves and protected areas
-        to
-        ensure safe habitats for these magnificent cats. Anti-poaching measures, community-based conservation programs,
-        and efforts to mitigate human-tiger conflicts are also ongoing to support tiger conservation.
-    </p>
-    <h2>Significance of Tiger Conservation</h2>
-    <p>
-        The significance of tiger conservation goes beyond preserving a single species. Tigers are apex predators, and
-        their presence in the ecosystem helps regulate prey populations, which, in turn, maintains the balance of plant
-        and animal communities. Protecting tigers means safeguarding the entire ecosystem they inhabit.
-    </p>
-    <p>
-        Through the collective efforts of government authorities, conservationists, local communities, and global
-        supporters, there is hope that the elusive tigers of India will continue to prowl the forests for generations to
-        come.
-    </p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="article">
+        <h1>The Elusive Tigers of India</h1>
+        <img src="/public/bengal.png" alt="Bengal Tiger in Grasslands">
+        <p>
+            India's national animal, the Bengal tiger (<em>Panthera tigris tigris</em>), roams the dense forests and
+            grasslands of the Indian subcontinent. These majestic predators are not only a symbol of strength and grace
+            but
+            also play a vital role in maintaining the ecological balance of their habitats.
+        </p>
+        <h2>Challenges and Conservation</h2>
+        <p>
+            In this article, we delve into the challenges faced by the elusive tigers in the wild. India's tiger
+            population
+            has faced significant threats due to poaching, habitat fragmentation, and human-wildlife conflict. The
+            demand
+            for
+            tiger parts in illegal markets, driven by traditional medicine and status symbols, has been a major factor
+            behind
+            tiger poaching. Additionally, as human populations expand and encroach upon tiger habitats, conflicts arise
+            when
+            tigers venture close to villages, leading to retaliatory killings and further endangering the species.
+        </p>
+        <img src="/public/tiger.png" alt="Tiger in the Wild">
+        <p>
+            Despite these challenges, concerted efforts have been made to protect and conserve tigers in India.
+            Initiatives
+            like Project Tiger, launched in 1973, have been instrumental in establishing tiger reserves and protected
+            areas
+            to
+            ensure safe habitats for these magnificent cats. Anti-poaching measures, community-based conservation
+            programs,
+            and efforts to mitigate human-tiger conflicts are also ongoing to support tiger conservation.
+        </p>
+        <h2>Significance of Tiger Conservation</h2>
+        <p>
+            The significance of tiger conservation goes beyond preserving a single species. Tigers are apex predators,
+            and
+            their presence in the ecosystem helps regulate prey populations, which, in turn, maintains the balance of
+            plant
+            and animal communities. Protecting tigers means safeguarding the entire ecosystem they inhabit.
+        </p>
+        <p>
+            Through the collective efforts of government authorities, conservationists, local communities, and global
+            supporters, there is hope that the elusive tigers of India will continue to prowl the forests for
+            generations to
+            come.
+        </p>
+    </article>
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {
