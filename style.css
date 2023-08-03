@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: 'Spartan', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.6;
@@ -281,6 +280,29 @@ nav ul li a:focus {
     cursor: pointer;
     border: none;
     transition: 0.2s;
+}
+
+#newsletter .feedback-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.feedback-container textarea {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @media (max-width: 768px) {
+        flex-basis: 70%;
+    }
+}
+
+.feedback-container button {
+    width: 50%;
 }
 
 #about {
