@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExploreNature</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap"
@@ -30,9 +31,10 @@
                     <li><a href="#articles">Articles</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li id="mute-button" class="mute-icon" onclick="toggleMute()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="24px" height="24px">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 9v6h4l5 5V4l-5 5H7z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="24px"
+                            height="24px">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 9v6h4l5 5V4l-5 5H7z" />
                         </svg>
                     </li>
                 </ul>
@@ -104,19 +106,51 @@
                 <h2>Nature Videos</h2>
                 <div class="video-grid">
                     <div class="video-card">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xg79mkbNaTg" frameborder="0"
+                        <iframe src="https://www.youtube.com/embed/xg79mkbNaTg" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="video-card">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8"
+                        <iframe src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/kjPc-ow44TE" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VF5S0uGG6tg"
                             title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/iyNA62FrKCE" title="YouTube video player"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
-
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <div class="feedback-container">
+                    <textarea id="feedback" placeholder="Your feedback"></textarea>
+                    <button class="normal" onclick="submitFeedback()">Submit</button>
+                </div>
+                <h4>Sign Up for Newsletter</h4>
+                <p>Get E-mail updates about the latest nature news!</p>
+                <p id="newsletter-feedback"></p>
+            </div>
+            <div class="form">
+                <input type="text" id="email" placeholder="Your email address">
+                <button class="normal" onclick="subscribeNewsletter()">Sign Up</button>
+            </div>
+        </section>
         <section id="articles">
             <h2>Featured Articles</h2>
             <p>Keep up to date with the happenings around the world</p>
@@ -181,21 +215,6 @@
                         </p>
                     </a>
                 </div>
-            </div>
-        </section>
-        <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                <div class="feedback-container">
-                    <textarea id="feedback" placeholder="Your feedback"></textarea>
-                    <button class="normal" onclick="submitFeedback()">Submit</button>
-                </div>
-                <h4>Sign Up for Newsletter</h4>
-                <p>Get E-mail updates about the latest nature news!</p>
-                <p id="newsletter-feedback"></p>
-            </div>
-            <div class="form">
-                <input type="text" id="email" placeholder="Your email address">
-                <button class="normal" onclick="subscribeNewsletter()">Sign Up</button>
             </div>
         </section>
     </main>

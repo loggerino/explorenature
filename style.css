@@ -83,7 +83,7 @@ nav ul li a:focus {
     border: none;
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 10%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -118,6 +118,10 @@ nav ul li a:focus {
         width: auto;
         height: 100%;
     }
+}
+
+#photos {
+    margin-bottom: 80px;
 }
 
 .photos-title {
@@ -224,9 +228,9 @@ nav ul li a:focus {
 }
 
 #newsletter {
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     background-color: #041e42;
@@ -294,6 +298,14 @@ nav ul li a:focus {
     margin-bottom: 20px;
 }
 
+#newsletter textarea {
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
 #about {
     background-color: #044222;
     color: #fff;
@@ -312,6 +324,7 @@ nav ul li a:focus {
 .footer-content h3 {
     font-size: 20px;
     font-weight: 700;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -377,11 +390,12 @@ nav ul li a:focus {
 
 .video-card {
     padding: 20px;
+    max-width: auto;
 }
 
 .video-card iframe {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    height: 100%;
 }
 
 .mute-icon {
